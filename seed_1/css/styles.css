@@ -1,0 +1,19 @@
+body {
+  padding: 0;
+  margin: auto;
+  text-align: center;
+}
+.flexbox{
+  margin:auto;
+  width: 80vw;
+  height:50px;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+button{
+  margin:5px;
+}
+#defaultCanvas0{
+  margin-top:10vh;
+}
