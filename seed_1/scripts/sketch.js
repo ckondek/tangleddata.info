@@ -13,7 +13,10 @@ function preload(){
   let entries=getDB().map(getList)
   //Build Image Array
   for (let i=0;i<entries.length;i++){
+
     loadImage(entries[i][0],img=>{
+      console.log("image:" ,img)
+
       garden.push(
         {
           "image":img,
@@ -44,6 +47,7 @@ function setup() {
 function draw() {
   background(200)
   let temp=garden[picNum]['image'];
+  console.log("temp:",temp)
   let created;
   if (garden[picNum].created== null){
     created = "Sometime in the past"
